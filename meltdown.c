@@ -350,8 +350,8 @@ int usage(void)
 int main(int argc, char** argv)
 {
   config();
-  size_t start_addr = 0x400845;
-  size_t len = 100;
+  size_t start_addr;
+  size_t len;
   int t; unsigned char read_buf[16];
   
   char *progname = argv[0];
